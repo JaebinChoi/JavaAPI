@@ -9,7 +9,7 @@ import kr.jbchoi.domain.Book;
 
 // Gson API
 // JSON Data 분석 : https://jsoneditoronline.org
-public class JSONApi_Gson {
+public class P01_JSONApi_Gson {
 	public static void main(String[] args) {
 		// Object(Book) -> JSON(String) 
 		Book book = new Book("자바", 21000, "AAA", 670);
