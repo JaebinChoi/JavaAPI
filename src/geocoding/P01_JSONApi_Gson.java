@@ -5,7 +5,7 @@ import java.util.List;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken; // reflect : 자바 고급 기법(역추적) => 배워볼 것
 
-import kr.jbchoi.domain.Book;
+import domain.Book;
 
 // Gson API
 // JSON Data 분석 : https://jsoneditoronline.org
