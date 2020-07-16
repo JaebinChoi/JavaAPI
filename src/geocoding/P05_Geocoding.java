@@ -109,7 +109,7 @@ public class P05_Geocoding {
 				InputStream is = con.getInputStream();
 				int read = 0;
 				byte[] bytes = new byte[1024];
-				
+
 				// 랜덤한 이름으로 파일 생성
 				String fileName = Long.valueOf(new Date().getTime()).toString();
 				File file = new File(fileName + ".jpg");
