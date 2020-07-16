@@ -48,7 +48,7 @@ public class P04_Geocoding {
 			JSONTokener tokener = new JSONTokener(response.toString());
 			JSONObject object = new JSONObject(tokener);
 			System.out.println(object.toString(2));
-
+			
 			JSONArray array = object.getJSONArray("addresses");
 			for(int i = 0; i < array.length(); i++) { // 해당 주소는 1개이므로 1번 반복
 				JSONObject obj = (JSONObject) array.get(i);
