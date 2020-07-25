@@ -13,3 +13,6 @@ JavaAPI Practice
 - Text(News, Bible)
 - Image
 - MP3
+
+# 2020-07-26 ~ 
+ Title : Naver Search Open API
