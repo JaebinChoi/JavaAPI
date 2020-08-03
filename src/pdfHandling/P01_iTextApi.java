@@ -1,4 +1,4 @@
-package PDFHandling;
+package pdfHandling;
 
 import java.io.*;
 import com.itextpdf.text.Document;
