@@ -9,7 +9,8 @@ JavaAPI Practice
 
 # 2020-07-19 ~ 2020-07-24
  Title : Cwaling Project
-- Jsoup API
+
+Jsoup API
 - Text(News, Bible)
 - Image
 - MP3
@@ -28,6 +29,12 @@ Excel Handling API
 
 Naver Search Open API
 
-# 2020-08-02 ~
+# 2020-08-02 ~ 2020-08-07
  Title : PDF Handle
-- iText API
+
+iText API
+- Table
+- Paragraph
+- Image
+- Image Scaling
+- Excel Read, PDF Write
