@@ -1,0 +1,13 @@
+MQTT (Message Queue Telemetry Transport) Protocol => 메시지 전송 프로토콜
+
+Download : https://mosquitto.org/download/
+
+서버 구동 (cmd -> 관리자 권한) : 설치 경로로 이동
+mosquitto -v
+
+Subscriber(구독자) -> 수신대기 창
+mosquitto_sub -t(Topic) iot(Topic Name) -p(Port) 1883(Port Number)
+
+Publisher(발행자) -> 메시지(Topic) 발행 창
+mosquitto_pub -t iot -p 1883 -m(Message) "hi"
+mosquitto_pub -t iot -p 1883 -m(Message) "{\"name\":\"jaebin\", \"age\":26}" // JSON 형식
