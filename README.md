@@ -39,5 +39,9 @@ iText API
 - Image Scaling
 - Excel Read, PDF Write
 
-# 2020-08-08 ~
+# 2020-08-08 ~ 2020-08-11
  Title : MQTT Client
+ - Multi Chatting Server, Client
+ 
+# 2020-08-13 ~
+ Title : Socket Programming
