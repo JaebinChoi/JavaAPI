@@ -43,5 +43,8 @@ iText API
  Title : MQTT Client
  - Multi Chatting Server, Client
  
-# 2020-08-13 ~
+# 2020-08-13 ~ 2020-08-15
  Title : Socket Programming
+
+- Echo Program
+- Multi Chatting Program
