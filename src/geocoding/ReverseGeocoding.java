@@ -59,8 +59,6 @@ public class ReverseGeocoding {
 				String address = regionDoSi + " " + regionGu + " " + regionDong;
 				System.out.println(address);
 			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		} catch (Exception e) { e.printStackTrace(); }
 	}
 }
