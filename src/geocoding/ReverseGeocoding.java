@@ -17,8 +17,8 @@ public class ReverseGeocoding {
 		String clientId = "ID";
 		String clientSecret = "Secret";
 		
-		String lat = "37.5012308333"; // 위도
-		String lng = "127.040511167"; // 경도
+		String lat = "37.361559"; // 위도
+		String lng = "126.9794443"; // 경도
 		
 		String apiURL = "https://naveropenapi.apigw.ntruss.com/map-reversegeocode/v2/gc?coords=";
 		try {
@@ -43,16 +43,22 @@ public class ReverseGeocoding {
 			JSONTokener tokener = new JSONTokener(response.toString());
 			JSONObject object = new JSONObject(tokener);
 			
-			JSONArray array = object.getJSONArray("results");
-			JSONObject addr = object.getJSONArray("results").getJSONObject(2);
-			String regionRo = addr.getJSONObject("land").getString("name");
+			// 0 : 반환 o, 3 : no result
+			int status = (int) object.getJSONObject("status").get("code");
+			System.out.println(status);
 			
-			JSONObject region = addr.getJSONObject("region");
-			String regionDo = region.getJSONObject("area1").getString("name");
-			String regionSiGu = region.getJSONObject("area2").getString("name");
-			
-			String address = regionDo + " " + regionSiGu + " " + regionRo;
-			System.out.println(address);
+			if(status == 0) {
+				JSONArray array = object.getJSONArray("results");
+				JSONObject addr = object.getJSONArray("results").getJSONObject(0);
+				
+				JSONObject region = addr.getJSONObject("region");
+				String regionDoSi = region.getJSONObject("area1").getString("name");
+				String regionGu = region.getJSONObject("area2").getString("name");
+				String regionDong = region.getJSONObject("area3").getString("name");
+				
+				String address = regionDoSi + " " + regionGu + " " + regionDong;
+				System.out.println(address);
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
